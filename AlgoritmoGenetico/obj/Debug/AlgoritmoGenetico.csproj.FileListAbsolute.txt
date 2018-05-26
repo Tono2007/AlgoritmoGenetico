@@ -1,0 +1,9 @@
+c:\users\toño\documents\visual studio 2015\Projects\AlgoritmoGenetico\AlgoritmoGenetico\bin\Debug\AlgoritmoGenetico.exe.config
+c:\users\toño\documents\visual studio 2015\Projects\AlgoritmoGenetico\AlgoritmoGenetico\bin\Debug\AlgoritmoGenetico.exe
+c:\users\toño\documents\visual studio 2015\Projects\AlgoritmoGenetico\AlgoritmoGenetico\bin\Debug\AlgoritmoGenetico.pdb
+c:\users\toño\documents\visual studio 2015\Projects\AlgoritmoGenetico\AlgoritmoGenetico\obj\Debug\AlgoritmoGenetico.csprojResolveAssemblyReference.cache
+c:\users\toño\documents\visual studio 2015\Projects\AlgoritmoGenetico\AlgoritmoGenetico\obj\Debug\AlgoritmoGenetico.Form1.resources
+c:\users\toño\documents\visual studio 2015\Projects\AlgoritmoGenetico\AlgoritmoGenetico\obj\Debug\AlgoritmoGenetico.Properties.Resources.resources
+c:\users\toño\documents\visual studio 2015\Projects\AlgoritmoGenetico\AlgoritmoGenetico\obj\Debug\AlgoritmoGenetico.csproj.GenerateResource.Cache
+c:\users\toño\documents\visual studio 2015\Projects\AlgoritmoGenetico\AlgoritmoGenetico\obj\Debug\AlgoritmoGenetico.exe
+c:\users\toño\documents\visual studio 2015\Projects\AlgoritmoGenetico\AlgoritmoGenetico\obj\Debug\AlgoritmoGenetico.pdb
