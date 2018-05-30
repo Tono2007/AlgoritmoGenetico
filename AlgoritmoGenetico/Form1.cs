@@ -21,7 +21,8 @@ namespace AlgoritmoGenetico
         {
             Random r = new Random();
             int Poblacion = Convert.ToInt32(tbPoblacion.Text);
-            double sumatoria = 0,acumulado=0;
+            double sumatoria = 0;
+           
             lbX.Items.Clear();
             lbIndividuos.Items.Clear();
             lbFx.Items.Clear();
@@ -31,19 +32,27 @@ namespace AlgoritmoGenetico
             if ((Poblacion % 2) == 0)
             {
                 for (int i = 0; i < Poblacion; i++)
-                {               
-                    int random = r.Next(1, 254);
-                    lbX.Items.Add(random);//Inicializar Población
-                    lbIndividuos.Items.Add(Convert.ToString(random, 2));
-                    double fx = Math.Sin(Math.PI * random / 256); //Calcular aptitud 
-                    lbFx.Items.Add(Decimal.Round(Convert.ToDecimal(fx),3));
-                    sumatoria = sumatoria + Convert.ToDouble(Decimal.Round(Convert.ToDecimal(fx),3));
+                {
+                    string binario="";
+                    for (int j=0;j<8;j++)//Generar numero binario aleatorio
+                    {
+                        int random = r.Next(0,2);
+                        binario = binario + Convert.ToString(random);
+                    }                      
+                    lbIndividuos.Items.Add(binario);
+                    int x = Convert.ToInt16(binario,2);//Binario a decimal
+                    lbX.Items.Add(x);//Inicializar Población
+                    
+                    double fx = Math.Sin(Math.PI * x / 256); //Calcular aptitud 
+                    lbFx.Items.Add(fx);
+                    sumatoria = sumatoria + Convert.ToDouble(fx);
                 }
                 lbSumatoria.Text = Convert.ToString(sumatoria);
+                double acumulado=0;
                 for (int i = 0; i < Poblacion; i++)
-                {
+                {          
                     lbFx.SelectedIndex = i;//calcular fnorm
-                    lbFnorm.Items.Add((Decimal.Round(Convert.ToDecimal(Convert.ToDouble(lbFx.SelectedItem) / sumatoria),3)));
+                    lbFnorm.Items.Add(Convert.ToDouble(lbFx.SelectedItem) / sumatoria);
                     lbFnorm.SelectedIndex = i;
                     acumulado = acumulado + Convert.ToDouble(lbFnorm.SelectedItem);//Calcular acumulado de fnorm
                     lbAcumulado.Items.Add(Convert.ToString(acumulado));
@@ -58,7 +67,7 @@ namespace AlgoritmoGenetico
                 lbSumatoriaNorm.Text = Convert.ToString(acumulado);   
                 for (int i=0;i<Poblacion;i++) //seleccion por ruleta
                 {
-                    double random = r.NextDouble();
+                    double random = r.NextDouble();//Numero random entre 0 y 1
                     for(int j=0;j<Poblacion;j++)
                     {
                         lbAcumulado.SelectedIndex = j;
