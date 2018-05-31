@@ -16,3 +16,13 @@ C:\Users\Toño\Desktop\AlgoritmoGenetico\AlgoritmoGenetico\obj\Debug\AlgoritmoGe
 C:\Users\Toño\Desktop\AlgoritmoGenetico\AlgoritmoGenetico\obj\Debug\AlgoritmoGenetico.Form1.resources
 C:\Users\Toño\Desktop\AlgoritmoGenetico\AlgoritmoGenetico\obj\Debug\AlgoritmoGenetico.Properties.Resources.resources
 C:\Users\Toño\Desktop\AlgoritmoGenetico\AlgoritmoGenetico\obj\Debug\AlgoritmoGenetico.csproj.GenerateResource.Cache
+C:\Users\Juan Daniel\Documents\proyectos noveno\AlgoritmoGenetico\AlgoritmoGenetico\bin\Debug\AlgoritmoGenetico.exe.config
+C:\Users\Juan Daniel\Documents\proyectos noveno\AlgoritmoGenetico\AlgoritmoGenetico\bin\Debug\AlgoritmoGenetico.exe
+C:\Users\Juan Daniel\Documents\proyectos noveno\AlgoritmoGenetico\AlgoritmoGenetico\bin\Debug\AlgoritmoGenetico.pdb
+C:\Users\Juan Daniel\Documents\proyectos noveno\AlgoritmoGenetico\AlgoritmoGenetico\obj\Debug\AlgoritmoGenetico.csprojResolveAssemblyReference.cache
+C:\Users\Juan Daniel\Documents\proyectos noveno\AlgoritmoGenetico\AlgoritmoGenetico\obj\Debug\AlgoritmoGenetico.Form1.resources
+C:\Users\Juan Daniel\Documents\proyectos noveno\AlgoritmoGenetico\AlgoritmoGenetico\obj\Debug\AlgoritmoGenetico.Properties.Resources.resources
+C:\Users\Juan Daniel\Documents\proyectos noveno\AlgoritmoGenetico\AlgoritmoGenetico\obj\Debug\AlgoritmoGenetico.csproj.GenerateResource.cache
+C:\Users\Juan Daniel\Documents\proyectos noveno\AlgoritmoGenetico\AlgoritmoGenetico\obj\Debug\AlgoritmoGenetico.csproj.CoreCompileInputs.cache
+C:\Users\Juan Daniel\Documents\proyectos noveno\AlgoritmoGenetico\AlgoritmoGenetico\obj\Debug\AlgoritmoGenetico.exe
+C:\Users\Juan Daniel\Documents\proyectos noveno\AlgoritmoGenetico\AlgoritmoGenetico\obj\Debug\AlgoritmoGenetico.pdb
