@@ -99,6 +99,8 @@ namespace AlgoritmoGenetico
                     {
                         pcrt1 = r.Next(0, 8);//random de 0 a 7
                         pcrt2 = r.Next(0, 8);
+                        //pcrt1 = 5;
+                        //pcrt2 = 2;
                     } while (pcrt1==pcrt2);                    
                     lbPadres.SelectedIndex = i;
                     //aux1 = lbPadres.SelectedItem.ToString();
@@ -142,19 +144,20 @@ namespace AlgoritmoGenetico
                         for (int j = 0; j < lbPadres.SelectedItem.ToString().Length; j++)
                         {
                             if (j <= pcrt2 || j >= pcrt1)
-                            {                               
-                                lbPadres.SelectedIndex = i;
-                                aux1 += lbPadres.SelectedItem.ToString()[j];
-                                lbPadres.SelectedIndex = i + 1;
-                                aux2 += lbPadres.SelectedItem.ToString()[j];
-                            }
-                            else
                             {
                                 lbPadres.SelectedIndex = i + 1;
                                 aux1 += lbPadres.SelectedItem.ToString()[j];
                                 lbPadres.SelectedIndex = i;
                                 aux2 += lbPadres.SelectedItem.ToString()[j];
                                 //aux1.Replace(aux1[j], lbPadres.SelectedItem.ToString()[j]);
+                            }
+                            else
+                            {
+
+                                lbPadres.SelectedIndex = i;
+                                aux1 += lbPadres.SelectedItem.ToString()[j];
+                                lbPadres.SelectedIndex = i + 1;
+                                aux2 += lbPadres.SelectedItem.ToString()[j];
                             }
 
                         }
