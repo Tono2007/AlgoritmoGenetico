@@ -178,6 +178,45 @@ namespace AlgoritmoGenetico
                     lbHijos.Items.Add(lbPadres.SelectedItem);
                 }                
             }
+
+            for (int i = 0; i < Poblacion; i++) //Recorrer el numero de hijos
+            {
+                string aux = "";
+                lbHijos.SelectedIndex = i;//Posicionarse en el item 1
+                for (int j = 0; j < lbHijos.SelectedItem.ToString().Length; j++)//Recorrer el numero de elementos de cada hijo
+                {
+                    double al1 = r.NextDouble();
+                    //lbHijos.SelectedIndex = j;
+                    if (al1 < Convert.ToDouble(tbPM.Text))//Si el numero aleatorio es menor que la probabilidad de mutacion
+                    {
+                        if (lbHijos.SelectedItem.ToString()[j] == '0')//si la posicion actual de j en hijo es 0
+                        {
+                            //aux1+=lbHijos.SelectedIndex.ToString()[j];
+                            aux += "1";
+                            //aux1.Replace(aux[j], lbHijos.SelectedItem.ToString()[j]);
+                            //aux1.Remove(j, 1).Insert(j, aux);
+                            //lbHijos.SelectedIndex = i++;
+                            
+                        }
+                        else
+                        {
+                            //aux1 += lbHijos.SelectedIndex.ToString()[j];
+                            aux += "0";
+                            //aux1.Replace(aux[j], lbHijos.SelectedItem.ToString()[j]);
+                            //aux1.Remove(j, 1).Insert(j, aux);
+                            //lbHijos.SelectedIndex = i++;
+                        }
+                    }
+                    else
+                    {
+                        aux += lbHijos.SelectedItem.ToString()[j];
+
+                    }
+                }
+                lbMutacion.Items.Add(aux);
+                aux = "";
+                //aux1 = "";
+            }
         }
     }
 }
