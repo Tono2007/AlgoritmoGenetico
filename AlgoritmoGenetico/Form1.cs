@@ -30,6 +30,7 @@ namespace AlgoritmoGenetico
             lbAcumulado.Items.Clear();
             lbPadres.Items.Clear();
             lbHijos.Items.Clear();
+            lbMutacion.Items.Clear();
             if ((Poblacion % 2) == 0)
             {
                 for (int i = 0; i < Poblacion; i++)
