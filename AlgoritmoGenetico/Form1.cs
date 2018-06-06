@@ -102,9 +102,9 @@ namespace AlgoritmoGenetico
                         //pcrt1 = 5;
                         //pcrt2 = 2;
                     } while (pcrt1==pcrt2);                    
-                    lbPadres.SelectedIndex = i;
+                    //lbPadres.SelectedIndex = i;
                     //aux1 = lbPadres.SelectedItem.ToString();
-                    lbPadres.SelectedIndex = i+1;
+                    //lbPadres.SelectedIndex = i+1;
                     //aux2 = lbPadres.SelectedItem.ToString();
                     if (pcrt1 < pcrt2)
                     {
@@ -138,9 +138,9 @@ namespace AlgoritmoGenetico
                     }
                     else
                     {
-                        MessageBox.Show("Entre", "Algoritmo Genético", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                        //MessageBox.Show("Entre", "Algoritmo Genético", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
                         lbPadres.SelectedIndex = i;
-                        MessageBox.Show(lbPadres.SelectedItem.ToString() + " antes".ToString(), "Algoritmo Genético", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                       // MessageBox.Show(lbPadres.SelectedItem.ToString() + " antes".ToString(), "Algoritmo Genético", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
                         for (int j = 0; j < lbPadres.SelectedItem.ToString().Length; j++)
                         {
                             if (j <= pcrt2 || j >= pcrt1)
@@ -161,7 +161,7 @@ namespace AlgoritmoGenetico
                             }
 
                         }
-                        MessageBox.Show(aux1 + " despues", "Algoritmo Genético", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                        //  MessageBox.Show(aux1 + " despues", "Algoritmo Genético", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
                         lbHijos.Items.Add(aux1);
                         aux1 = "";
                         lbHijos.Items.Add(aux2);
